@@ -56,7 +56,9 @@ _: '/usr/local/bin/node'
 
 
 ## process.nextTick(콜백)
-
+- microTaskQueue에 들어간다.(이벤트루프에 포함되지 않고, 이벤트루프 이전에 실행된다.)
+- 이벤트루프를 진행하기 전에 수행할작업이 있을 때 사용한다.
 
 ## process.exit()
-
+- process.exit(1) : ERROR가 있다는걸 알리고 프로세스 종료
+- process.exit(0) : 에러 없이 프로세스 종료
